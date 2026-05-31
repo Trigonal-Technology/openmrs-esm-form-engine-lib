@@ -26,7 +26,7 @@ export const controlTemplates: Array<ControlTemplate> = [
     },
   },
   {
-    name: 'multi-encounter-provider',
+    name: 'multi-provider-select',
     datasource: {
       name: 'provider_datasource',
     },

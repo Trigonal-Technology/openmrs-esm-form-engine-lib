@@ -227,7 +227,7 @@ export type RenderType =
   | 'drug'
   | 'encounter-location'
   | 'encounter-provider'
-  | 'multi-encounter-provider'
+  | 'multi-provider-select'
   | 'encounter-role'
   | 'fixed-value'
   | 'file'
