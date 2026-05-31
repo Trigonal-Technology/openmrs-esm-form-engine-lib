@@ -147,9 +147,6 @@ function transformByType(question: FormField) {
     case 'encounterProvider':
       question.questionOptions.rendering = 'encounter-provider';
       break;
-    case 'encounterProviders':
-      question.questionOptions.rendering = 'multi-encounter-provider';
-      break;
     case 'encounterLocation':
       question.questionOptions.rendering = 'encounter-location';
       break;
@@ -198,9 +195,6 @@ function transformByRendering(question: FormField) {
     case 'drug':
     case 'problem':
       question.questionOptions.isSearchable = true;
-      break;
-    case 'multi-encounter-provider':
-      // Datasource-backed multi-select; no static answers needed
       break;
   }
   return question;
