@@ -3,6 +3,7 @@ import { ControlAdapter } from '../../adapters/control-adapter';
 import { EncounterDatetimeAdapter } from '../../adapters/encounter-datetime-adapter';
 import { EncounterLocationAdapter } from '../../adapters/encounter-location-adapter';
 import { EncounterProviderAdapter } from '../../adapters/encounter-provider-adapter';
+import { MultiEncounterProviderAdapter } from '../../adapters/multi-encounter-provider-adapter';
 import { EncounterRoleAdapter } from '../../adapters/encounter-role-adapter';
 import { InlineDateAdapter } from '../../adapters/inline-date-adapter';
 import { ObsAdapter } from '../../adapters/obs-adapter';
@@ -42,6 +43,10 @@ export const inbuiltFieldValueAdapters: RegistryItem<FormFieldValueAdapter>[] = 
   {
     type: 'encounterProvider',
     component: EncounterProviderAdapter,
+  },
+  {
+    type: 'encounterProviders',
+    component: MultiEncounterProviderAdapter,
   },
   {
     type: 'encounterRole',
