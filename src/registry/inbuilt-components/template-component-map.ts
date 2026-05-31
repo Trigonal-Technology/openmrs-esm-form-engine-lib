@@ -1,8 +1,13 @@
 import UiSelectExtended from '../../components/inputs/ui-select-extended/ui-select-extended.component';
+import MultiProviderSelect from '../../components/inputs/multi-select/multi-provider-select.component';
 
 export const templateToComponentMap = [
   {
     name: 'drug',
+    baseControlComponent: UiSelectExtended,
+  },
+  {
+    name: 'bed-select',
     baseControlComponent: UiSelectExtended,
   },
   {
@@ -12,6 +17,10 @@ export const templateToComponentMap = [
   {
     name: 'encounter-provider',
     baseControlComponent: UiSelectExtended,
+  },
+  {
+    name: 'multi-encounter-provider',
+    baseControlComponent: MultiProviderSelect,
   },
   {
     name: 'encounter-location',

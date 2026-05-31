@@ -5,11 +5,16 @@ import { LocationDataSource } from '../../datasources/location-data-source';
 import { ProviderDataSource } from '../../datasources/provider-datasource';
 import { SelectConceptAnswersDatasource } from '../../datasources/select-concept-answers-datasource';
 import { EncounterRoleDataSource } from '../../datasources/encounter-role-datasource';
+import { BedDataSource } from '../../datasources/bed-datasource';
 
 /**
  * @internal
  */
 export const inbuiltDataSources: Array<RegistryItem<DataSource<any>>> = [
+  {
+    name: 'bed_datasource',
+    component: new BedDataSource(),
+  },
   {
     name: 'location_datasource',
     component: new LocationDataSource(),

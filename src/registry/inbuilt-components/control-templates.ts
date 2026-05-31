@@ -26,6 +26,18 @@ export const controlTemplates: Array<ControlTemplate> = [
     },
   },
   {
+    name: 'multi-encounter-provider',
+    datasource: {
+      name: 'provider_datasource',
+    },
+  },
+  {
+    name: 'bed-select',
+    datasource: {
+      name: 'bed_datasource',
+    },
+  },
+  {
     name: 'encounter-role',
     datasource: {
       name: 'encounter_role_datasource',

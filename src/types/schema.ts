@@ -219,6 +219,7 @@ export interface QuestionAnswerOption {
 
 export type RenderType =
   | 'checkbox'
+  | 'bed-select'
   | 'checkbox-searchable'
   | 'content-switcher'
   | 'date'
@@ -226,6 +227,7 @@ export type RenderType =
   | 'drug'
   | 'encounter-location'
   | 'encounter-provider'
+  | 'multi-encounter-provider'
   | 'encounter-role'
   | 'fixed-value'
   | 'file'
