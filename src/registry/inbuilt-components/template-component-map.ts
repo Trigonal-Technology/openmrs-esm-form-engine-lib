@@ -19,7 +19,7 @@ export const templateToComponentMap = [
     baseControlComponent: UiSelectExtended,
   },
   {
-    name: 'multi-encounter-provider',
+    name: 'multi-provider-select',
     baseControlComponent: MultiProviderSelect,
   },
   {
